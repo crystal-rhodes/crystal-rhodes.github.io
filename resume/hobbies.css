@@ -1,0 +1,63 @@
+#header-hobbies {
+    background-image: url('./images/mountain.jpg');
+    /* source:  https://thumbor-static.factorymedia.com/THYv-FH9go-mLc-dO_UVv_6Hoys=/1920x1080/smart/http%3A%2F%2Fcoresites-cdn.factorymedia.com%2Fmpora_new%2Fwp-content%2Fuploads%2F2016%2F02%2FMountaineering-Equipment-Mountain-Ice-Climbing-Boots-Ireland-Books.jpg */
+    background-size: cover;
+    height: 575px;
+    background-blend-mode: screen;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
+#hobbies {
+    display: flex;
+}
+
+.hobby-container {
+    width: 256px;
+}
+
+.hobby-description {
+    padding: 15px;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+
+.wrapper {
+    height: 1150px;
+}
+
+main {
+    /* position: absolute; */
+    top: 55%;
+    left: 40% !important;
+    height: 570px;
+}
+
+figure {
+    padding: 25px;
+    text-align: center;
+    margin-bottom: 0 !important;
+}
+
+figure>img {
+    height: 75px;
+    /* border-radius: 50%; */
+    border: 2px solid #f6f6f6;
+    object-fit: contain;
+    margin-bottom: 30px;
+}
+
+footer {
+    padding-top: 550px;
+}
+
+.next-page-area {
+    text-align: left;
+    margin: 20px !important;
+    padding-left: 20px;
+}
+
+.heading-primary{
+    margin: -10px;
+}

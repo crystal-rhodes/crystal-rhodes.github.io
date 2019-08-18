@@ -1,335 +1,438 @@
-<!-- # Name: Minh Vu (Man)
-# Course Code: COMP-10001-W19-SA
-# Statement of Authorship: I am an author on this submission -->
-
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="utf-8" />
+<html>
+  <head>
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Man | Resume</title>
+    <title> Man. V | IT Developer</title>
+    <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
-
-    <!-- Bootstrap Compiled -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
-        crossorigin="anonymous">
-
-    <!-- Font Awesome Compiled -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
-        crossorigin="anonymous">
-</head>
-
-<body>
-    <div class="container-fluid">
-        <nav class="container navbar fixed-top navbar-expand-lg navbar-light bg-light">
-            <div class="">
-                <div class="navbar-nav">
-                    <a class="nav-item nav-link" href="#">Top</a>
-                    <a class="nav-item nav-link" href="#profile">Profile</a>
-                    <a class="nav-item nav-link" href="#education">Education</a>
-                    <a class="nav-item nav-link" href="#work-experience">Work Experience</a>
-                </div>
-            </div>
-        </nav>
-    </div>
-    <div class="wrapper">
-        <header id="#" class="">
+    <meta name="robots" content="all,follow">
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <!-- Font Awesome CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Google fonts - Roboto + Roboto Slab-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700%7CRoboto:400,700,300">
+    <!-- owl carousel-->
+    <link rel="stylesheet" href="vendor/owl.carousel/assets/owl.carousel.css">
+    <link rel="stylesheet" href="vendor/owl.carousel/assets/owl.theme.default.css">
+    <!-- animate.css-->
+    <link rel="stylesheet" href="vendor/animate.css/animate.css">
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- Leaflet CSS - For the map-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet.css">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="img/favicon.png">
+    <!-- Tweaks for older IEs--><!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+  </head>
+  <body>
+    <!-- Reference item-->
+    <!-- navbar-->
+    <header class="header">
+      <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container"><a href="#intro" class="navbar-brand scrollTo">Developer</a>
+          <button type="button" data-toggle="collapse" data-target="#navbarcollapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><span class="fa fa-bars"></span></button>
+          <div id="navbarcollapse" class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item"><a href="#intro" class="nav-link link-scroll">Intro</a></li>
+              <li class="nav-item"><a href="#about" class="nav-link link-scroll">About</a></li>
+              <li class="nav-item"><a href="#services" class="nav-link link-scroll">Services</a></li>
+              <li class="nav-item"><a href="#testimonials" class="nav-link link-scroll">Testimonials</a></li>
+              <li class="nav-item"><a href="#references" class="nav-link link-scroll">My work</a></li>
+              <li class="nav-item"><a href="#customers" class="nav-link link-scroll">Clients</a></li>
+              <li class="nav-item"><a href="#contact" class="nav-link link-scroll">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Intro Image-->
+    <section id="intro" style="background: url(img/home.jpg) center center no-repeat; background-size: cover;" class="intro-section pb-2">
+      <div class="container text-center">
+        <div data-animate="fadeInDown" class="logo"><img src="img/logo-big.png" alt="logo" width="130"></div>
+        <h1 data-animate="fadeInDown" class="text-shadow mb-5">I help passionate companies grow!</h1>
+        <p data-animate="slideInUp" class="h3 text-shadow text-400">Discover our web applications crafted with JavaScript and React using beautiful and efficient algorithms.</p>
+      </div>
+    </section>
+    <!-- About-->
+    <section id="about" class="about-section">
+      <div class="container">
+        <header class="text-center">
+          <h2 data-animate="fadeInDown" class="title">About me</h2>
         </header>
-        <hr class="header-hr">
-        <main class="row">
-            <div class="left-tab">
-                <div class="left-tab-content">
-                    <figure class="figure">
-                        <img class="figure-photo" src="./images/photo.jpg" alt="My Profile Photo">
-                    </figure>
-                    <div>
-                        <ul>
-                            <li>
-                                <h6 class="heading-container">
-                                    <i class="fas fa-plus-circle"></i>
-                                    <span class="heading-primary text-color-white">Contacts</span>
-                                </h6>
-                                <hr>
-                            </li>
+        <div class="row">
+          <div data-animate="fadeInUp" class="col-lg-6">
+            <p>A modern and innovative software developer who loves spending much of his time crafting web and mobile applications to solve business problems. With a <strong>full stack web development certification</strong> from FreeCodeCamp and <strong>2+ years of experience</strong> in the tech industry, I promise to deliver the best quality of work in a reasonable amount of time. </p>
 
-                            <li>
-                                <h6 class="heading-container">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                    <span class="heading-primary text-color-white">Address</span>
-                                </h6>
-                                <p><span class="heading-secondary text-color-white">Hamilton, Ontario, Canada</span>
-                                </p>
-                            <li>
-                                <h6 class="heading-container">
-                                    <i class="fas fa-phone"></i>
-                                    <span class="heading-primary text-color-white">Phone</span>
-                                </h6>
-                                <p><span class="heading-secondary text-color-white">226-971-9048</span> </p>
-                            </li>
-                            <li>
-                                <h6 class="heading-container">
-                                    <i class="fas fa-envelope"></i>
-                                    <span class="heading-primary text-color-white">Email</span>
-                                </h6>
-                                <p>
-                                    <a class="a-link" href="mailto:manvminh@gmail.com">
-                                        <span class="heading-secondary text-color-white">manvminh@gmail.com</span>
-                                    </a>
-                                </p>
-                            </li>
-                        </ul>
+            <p>Prior to 2019, I focused on front end web development to bring the best experience to your users. As I have mostly worked on the front end side, I am familiar with using <strong>BEM architecture, Bootstrap, React and Redux</strong> to bring the best interactive experience to users. </p>
 
-                        <ul>
-                            <li>
-                                <h6 class="heading-container">
-                                    <i class="fas fa-plus-circle"></i>
-                                    <span class="heading-primary text-color-white">Social Media</span>
-                                </h6>
-                                <hr>
-                            </li>
-                            <li>
-                                <h6 class="heading-container">
-                                    <i class="fab fa-facebook-f"></i>
-                                    <span class="heading-primary text-color-white">Facebook</span>
-                                </h6>
-                                <p><span class="heading-secondary text-color-white">facebook.com/imusm1997</span> </p>
-                            <li>
-                                <h6 class="heading-container">
-                                    <i class="fab fa-instagram"></i>
-                                    <span class="heading-primary text-color-white">Instagram</span>
-                                </h6>
-                                <p><span class="heading-secondary text-color-white">instagram.com/im.manman97</span>
-                                </p>
-                            </li>
-                            <li>
-                                <h6 class="heading-container">
-                                    <i class="fab fa-linkedin-in"></i>
-                                    <span class="heading-primary text-color-white">Linkedin</span>
-                                </h6>
-                                <p><span class="heading-secondary text-color-white">linkedin.com/in/manvu</span> </p>
-                            </li>
-                            <li>
-                                <h6 class="heading-container">
-                                    <i class="fab fa-free-code-camp"></i>
-                                    <span class="heading-primary text-color-white">Free Code Camp</span>
-                                </h6>
-                                <p><span class="heading-secondary text-color-white">freecodecamp.org/manvu</span> </p>
-                            </li>
-                            <li>
-                                <h6 class="heading-container">
-                                    <i class="fab fa-github"></i>
-                                    <span class="heading-primary text-color-white">GitHub</span>
-                                </h6>
-                                <p><span class="heading-secondary text-color-white">github.com/crystal-rhodes</span>
-                                </p>
-                            </li>
-                        </ul>
+            <p>The increased demand for a know-all web developer has driven up my motivation to work on <strong>relational and non-relational databases, RESTful API, and GraphQL</strong>. As such, I have become a full stack web developer and worked on many e-commerce side projects. </p>
 
-                    </div>
-                </div>
-
+            <p>Besides this, my set of projects also sees mobile applications, the most complex and latest of which is <strong>Cash Register</strong>. I am developing this iOS app for a private company using <strong>Swift, Cocoatouch frameworks, and many more</strong>. </p>
+          </div>
+          <div data-animate="fadeInUp" class="col-lg-6">
+            <div class="skill-item">
+              <div class="progress-title">Javascript</div>
+              <div class="progress">
+                <div role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="60" aria-valuemax="100" class="progress-bar progress-bar-skill2"></div>
+              </div>
             </div>
-            <div class="right-tab col">
-                <div class="header-title">
-                    <span class="header-initial">
-                        <em><sup>M</sup>//<sub>V</sub></em>
-                    </span>
-                    <hr>
-                    <div>
-                        <span class="header-last-name">
-                            Vu Minh
-                        </span>
-                        <span class="header-first-name">
-                            Man
-                        </span>
-                    </div>
-                    <hr>
-                    <div class="header-headline">
-                        Full Stack Developer
-                    </div>
-                </div>
-                <div class="right-tab-content">
-                    <section id="relevant-skills" class="">
-                        <div class="section-title">
-                            <h5>
-                                <span class="section-title__text">Relevant Skills</span>
-                            </h5>
-                        </div>
-                        <div class="skill-field">
-                            <p class="skill-row">
-                                <span class="skill-border text-color-brown">&#10004;HTML</span>
-                                <span class="skill-border text-color-brown">&#10004;(S)CSS</span>
-                                <span class="skill-border text-color-brown">&#10004;Responsive Design</span>
-                                <span class="skill-border text-color-brown">&#10004;Bootstrap</span>
-                            </p>
-                            <p class="skill-row">
-                                <span class="skill-border text-color-brown">&#10004;JavaScript</span>
-                                <span class="skill-border text-color-brown">&#10004;React/Redux</span>
-                                <span class="skill-border text-color-brown">&#10004;Node.js</span>
-                                <span class="skill-border text-color-brown">&#10004;PostgreSQL</span>
-
-                            </p>
-                            <p class="skill-row">
-                                <span class="skill-border text-color-brown">&#10004;MongoDB</span>
-                                <span class="skill-border text-color-brown">&#10004;GraphQL</span>
-                                <span class="skill-border text-color-brown">&#10004;PHP</span>
-                                <span class="skill-border text-color-brown">&#10004;Docker</span>
-                                <span class="skill-border text-color-brown">&#10004;MySQL</span>
-                            </p>
-                            <p class="skill-row">
-                                <span class="skill-border text-color-brown">&#10004;Git</span>
-                                <span class="skill-border text-color-brown">&#10004;JWT</span>
-                                <span class="skill-border text-color-brown">&#10004;OAuth</span>
-                                <span class="skill-border text-color-brown">&#10004;RestfulAPIs</span>
-                                <span class="skill-border text-color-brown">&#10004;PSD to HTML</span>
-
-                            </p>
-                        </div>
-
-                    </section>
-
-                    <section id="profile" class="">
-                        <div class="section-title">
-                            <h5>
-                                <span class="section-title__text">Profile</span>
-                            </h5>
-
-                        </div>
-                        <blockquote>
-
-                            <i class="fas fa-quote-left"></i>
-                            <em>&nbsp; An industrious, hugely productive, and enthusiastic full stack web developer
-                                seeks web
-                                developer remote jobs where web technologies are applied to produce modern web
-                                applications satisfying the needs of users and businesses&nbsp; </em>
-                            <i class="fas fa-quote-right"></i>
-                        </blockquote>
-                    </section>
-
-                    <section id="education" class="">
-                        <div class="section-title">
-                            <h5>
-                                <span class="section-title__text">Education</span>
-                            </h5>
-                        </div>
-                        <ul>
-                            <li>
-                                <span class="organization-name text-color-brown">
-                                    Mohawk College
-                                </span>
-                                <p class="organization-info text-color-brown">
-                                    Software Development / Jan 2019&nbsp;-&nbsp;present
-                                </p>
-                                <p class="organization-description text-color-brown">
-                                    An excellent introduction to computer systems, the program covers key topics
-                                    such as programming, systems analysis, mobile applications, database design,
-                                    software quality, testing, web development, math and communication skills.
-                                </p>
-                            </li>
-                            <li>
-                                <span class="organization-name text-color-brown">
-                                    FreeCodeCamp
-                                </span>
-                                <p class="organization-info text-color-brown">
-                                    Full Stack Developer Certification / May 2017&nbsp;-&nbsp;Nov 2018
-                                </p>
-                                <p class="organization-description text-color-brown">
-                                    Project-focused intensive program with emphasis on Mongo, Express, React, Node
-                                    (MERN technical stack)
-                                </p>
-                            </li>
-                            <li>
-                                <span class="organization-name text-color-brown">
-                                    Conestoga College
-                                </span>
-                                <p class="organization-info text-color-brown">
-                                    Computer Engineering Technology / Aug 2016&nbsp;-&nbsp;Dec 2017
-                                </p>
-                            </li>
-                        </ul>
-                    </section>
-
-                    <section id="work-experience" class="">
-                        <div class="section-title">
-                            <h5>
-                                <span class="section-title__text">Professional Experience</span>
-                            </h5>
-                        </div>
-                        <ul>
-                            <li>
-                                <span class="organization-name text-color-brown">
-                                    Full Stack Developer
-                                </span>
-                                <p class="organization-info text-color-brown">
-
-
-                                    <a class="a-link text-color-brown" href="https://www.freelancer.com/">
-                                        <img src="./images/freelancer.jpg" alt="https://seeklogo.com/vector-logo"
-                                            height="20" width="20">
-                                        Self-employed
-                                    </a>
-                                    / July 2018&nbsp;-&nbsp;present
-                                </p>
-                                <p class="organization-description text-color-brown">
-                                    Rebuilt and refined the front end and back end of a website for a nail shop in USA,
-                                    using PHP
-                                    and Laravel that allowed users to explore and purchase various types of nail
-                                    designs
-                                </p>
-                            </li>
-                            <li>
-                                <span class="organization-name text-color-brown">
-                                    C++ Developer
-                                </span>
-                                <p class="organization-info text-color-brown">
-                                    <a class="a-link text-color-brown" href="https://www.upwork.com/">
-                                        <img src="./images/upwork.png" alt="https://seeklogo.com/vector-logo" height="20"
-                                            width="20">
-                                        Self-employed
-                                    </a>
-                                    / Dec 2017&nbsp;-&nbsp;Mar 2018
-                                </p>
-                                <p class="organization-description text-color-brown">
-                                    Helped a university student in American build a word counter with the application
-                                    of hash tables for optimizing time complexity. The project finally got 93% of
-                                    grade.
-                                </p>
-                            </li>
-                        </ul>
-                    </section>
-                    <div class="next-page-area">
-                        <a class="a-link" href="./hobbies.html">
-                            <span class="button-next-page">
-                                See Hobbies Page &rarr;
-                            </span>
-                        </a>
-                    </div>
-                </div>
+            <div class="skill-item">
+              <div class="progress-title">React</div>
+              <div class="progress">
+                <div role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="75" aria-valuemax="100" class="progress-bar progress-bar-skill1"></div>
+              </div>
             </div>
-        </main>
-        <footer>
-            <hr>
-            <div class="footer-bar">
-                <div class="footer-bar-left">
-
-                </div>
-                <div class="footer-bar-right">
-                    <h4 class="footer-bar-text">
-                        <span>
-
-                            <em><sup>M</sup>//<sub>V</sub></em>
-
-                        </span>
-                    </h4>
-                </div>
+            <div class="skill-item">
+              <div class="progress-title">C++</div>
+              <div class="progress">
+                <div role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" class="progress-bar progress-bar-skill3"></div>
+              </div>
             </div>
-        </footer>
-    </div>
+            <div class="skill-item">
+              <div class="progress-title">Swift</div>
+              <div class="progress">
+                <div role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" class="progress-bar progress-bar-skill4"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="progress-title">MySQL</div>
+              <div class="progress">
+                <div role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" class="progress-bar progress-bar-skill5"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="progress-title">MongoDB</div>
+              <div class="progress">
+                <div role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" class="progress-bar progress-bar-skill5"></div>
+              </div>
+            </div>
+            
+          </div>
+          <div data-animate="fadeInUp" class="col-sm-6 mx-auto mt-5"><img src="img/profile-picture.jpeg" alt="This is me - IT worker" class="image rounded-circle img-fluid"></div>
+        </div>
+      </div>
+    </section>
+    <!-- Service-->
+    <section id="services" class="bg-gradient services-section">
+      <div class="container">
+        <header class="text-center">
+          <h2 data-animate="fadeInDown" class="title">Services</h2>
+        </header>
+        <div class="row services text-center">
+          <div data-animate="fadeInUp" class="col-lg-4">
+            <div class="icon"><i class="fa fa-search"></i></div>
+            <h3 class="heading mb-3 text-400">Technology Consulting</h3>
+            <p class="text-left description">Willing to share my experience and opinions on how a web or mobile app should work and display. When performance bottlenecks become issues, suggestions and improvements are to be provided by professionals </p>
+          </div>
+          <div data-animate="fadeInUp" class="col-lg-4">
+            <div class="icon"><i class="fa fa-code"></i></div>
+            <h3 class="heading mb-3 text-400">Full Stack Development</h3>
+            <p class="text-left description">Designing, architecturing, and developing web applications front to back by incorporating different state-of-the-art web technologies into your apps to make beautiful and speedy web applications</p>
+          </div>
+          <div data-animate="fadeInUp" class="col-lg-4">
+            <div class="icon"><i class="fa fa-mobile-phone"></i></div>
+            <h3 class="heading mb-3 text-400">iOS Application Development</h3>
+            <p class="text-left description">Making eye-catching and smoothy apps with a professional who has a good understanding of Swift and how iOS platforms work under the hood </p>
+          </div>
+        </div>
+        <hr data-animate="fadeInUp">
+        <div data-animate="fadeInUp" class="text-center">
+          <p class="lead">Would you like to know more or just discuss something?</p>
+          <p><a href="#contact" class="btn btn-outline-light link-scroll">Contact me</a></p>
+        </div>
+      </div>
+    </section>
+    <!-- Testimonials-->
+    <section id="testimonials" class="testimonials-section bg-gray">
+      <div class="container">
+        <header class="text-center mb-2">
+          <h2 data-animate="fadeInUp" class="title">My customers said<br><span>about me</span></h2>
+          <p data-animate="fadeInUp" class="lead">I am always glad to hear that my customers leave satisfied. Some of them shared with you their insights on our cooperation.</p>
+        </header>
+        <ul data-animate="fadeInUp" class="owl-carousel owl-theme testimonials equalize-height">
+          <li class="item">
+            <div class="testimonial full-height">
+              <div class="text">
+                <p>Great and very responsive. Working with was an amazing experience</p>
+              </div>
+              <div class="bottom">
+                <div class="icon"><i class="fa fa-quote-left"></i></div>
+                <div class="name-picture"><img alt="" src="img/person-1.jpg">
+                  <h5>Atishin S</h5>
+                  <p>My former client</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="item">
+            <div class="testimonial full-height">
+              <div class="text">
+                <p>Man was excellent, provided great communication and extremely helpful and amazing work</p>
+              </div>
+              <div class="bottom">
+                <div class="icon"><i class="fa fa-quote-left"></i></div>
+                <div class="name-picture"><img alt="" src="img/person-2.jpg">
+                  <h5>Richard H.</h5>
+                  <p>My former client</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="item">
+            <div class="testimonial full-height">
+              <div class="text">
+                <p>This guy is very kind, speaks fluent English and his response and work is really fast. Does exactly what you want without asking way to much questions. I've got more work for him in the future for sure!</p>
+              </div>
+              <div class="bottom">
+                <div class="icon"><i class="fa fa-quote-left"></i></div>
+                <div class="name-picture"><img alt="" src="img/person-3.jpg">
+                  <h5>Jennifer Orana</h5>
+                  <p>CEO, TransTech</p>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- Statistics-->
+    <section id="statistics" data-dir="up" style="background: url(&quot;img/parallax.jpg&quot;);" class="statistics-section text-white parallax parallax">
+      <div class="container">
+        <div class="row showcase text-center"> 
+          <div data-animate="fadeInUp" class="col-lg-3 col-md-6">
+            <div class="item">
+              <div class="icon"><i class="fa fa-align-justify"></i></div>
+              <h5 class="text-400 mt-4 text-uppercase"><span class="counter">12</span><br>Websites</h5>
+            </div>
+          </div>
+          <div data-animate="fadeInUp" class="col-lg-3 col-md-6">
+            <div class="item">
+              <div class="icon"><i class="fa fa-users"></i></div>
+              <h5 class="text-400 mt-4 text-uppercase"><span class="counter">7</span><br>Satisfied Clients</h5>
+            </div>
+          </div>
+          <div data-animate="fadeInUp" class="col-lg-3 col-md-6">
+            <div class="item">
+              <div class="icon"><i class="fa fa-copy"></i></div>
+              <h5 class="text-400 mt-4 text-uppercase"><span class="counter">22</span><br>Projects</h5>
+            </div>
+          </div>
+          <div data-animate="fadeInUp" class="col-lg-3 col-md-6">
+            <div class="item">
+              <div class="icon"><i class="fa fa-font"></i></div>
+              <h5 class="text-400 mt-4 text-uppercase"><span class="counter">80</span><br>Magazines and Brochures</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dark-mask"></div>
+    </section>
+    <!--
+    *** REFERENCES IMAGE ***
+    _________________________________________________________
+    -->
+    <section id="references">
+      <div class="container">
+        <div class="col-sm-12">
+          <div class="mb-5 text-center">
+            <h2 data-animate="fadeInUp" class="title">My work</h2>
+            <p data-animate="fadeInUp" class="lead">I have worked on dozens of projects so I have picked only the latest for you.</p>
+          </div>
+          <ul id="filter" data-animate="fadeInUp">
+            <li class="active"><a href="#" data-filter="all">All</a></li>
+            <li><a href="#" data-filter="ios">iOS Apps</a></li>
+            <li><a href="#" data-filter="fullstack">Full Stack Web Apps</a></li>
+            <li><a href="#" data-filter="data-visualization">Data Visualization</a></li>
+            <li><a href="#" data-filter="other">Other</a></li>
+          </ul>
+          <div id="detail">
+            <div class="row">
+              <div class="col-lg-10 mx-auto"><span class="close">×</span>
+                <div id="detail-slider" class="owl-carousel owl-theme"></div>
+                <div class="text-center">
+                  <h1 id="detail-title" class="title"></h1>
+                </div>
+                <div id="detail-content"></div>
+              </div>
+            </div>
+          </div>
+          <!-- Reference detail-->
+          <div id="references-masonry" data-animate="fadeInUp">
+            <div class="row">
+                  <div data-category="ios" class="reference-item col-lg-3 col-md-6">
+                    <div class="reference"><a href="#"><img src="img/projects/cash-register-thumbnail.png" alt="" class="img-fluid">
+                        <div class="overlay">
+                          <div class="inner">
+                            <h3 class="h4 reference-title">Cash Register</h3>
+                            <p>A cash register project for a coffee store</p>
+                          </div>
+                        </div></a>
+                      <div data-images="img/projects/cash-register1.png,img/projects/cash-register2.png,img/projects/cash-register3.png" class="sr-only reference-description">
+                        <p>A delicate and interactive Cash Register compatiable with iPad platforms with intuitive user interface design </p>
+                        <p>In this project, I was able to <strong>connect the iOS app with peripheral devices</strong> over WiFi, a cash drawer and two thermal printers. One of them was responsible for printing temporary receipts, and the other was in charge of printing a receipt proof of payment. </p>
+                        <p>Other than that, we also helped the staff members with adding products to the machine by implementing <strong>a barcode scanner</strong> which boosted the speed and accuracy of the process. A credit card scanner was also added to retrieve the information of credit cards efficiently</p>
+                        <p>Tech stack: <strong>Swift, Objective C (partly), Cocoa Touch Frameworks, MySQL, RestFul APIs</strong> </p>
+                        <p class="buttons text-center"><a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fa fa-globe"></i> Visit website</a><a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fa fa-download"></i> Download case study</a></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div data-category="fullstack" class="reference-item col-lg-3 col-md-6">
+                    <div class="reference"><a href="#"><img src="img/projects/budget-app-thumbnail.png" alt="" class="img-fluid">
+                        <div class="overlay">
+                          <div class="inner">
+                            <h3 class="h4 reference-title">Budget App</h3>
+                            <p>Short project description goes here...</p>
+                          </div>
+                        </div></a>
+                      <div data-images="img/main-slider3.jpg,img/main-slider1.jpg" class="sr-only reference-description">
+                        <p>A delicate and interactive Cash Register compatiable with iPad platforms with intuitive user interface design  </p>
+                        <p>Sitting mistake towards his few country ask. You delighted two rapturous six depending objection happiness something the. Off nay impossible dispatched partiality unaffected. Norland adapted put ham cordial. Ladies talked may shy basket narrow see. Him she distrusts questions sportsmen. Tolerably pretended neglected on my earnestly by. Sex scale sir style truth ought.</p>
+                        <p class="buttons text-center"><a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fa fa-globe"></i> Visit website</a><a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fa fa-download"></i> Download case study</a></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div data-category="fullstack" class="reference-item col-lg-3 col-md-6">
+                    <div class="reference"><a href="#"><img src="img/projects/thebongda-thumbnail.png" alt="" class="img-fluid">
+                        <div class="overlay">
+                          <div class="inner">
+                            <h3 class="h4 reference-title">Soccer Card Site</h3>
+                            <p>An ecommerce project for a soccer card store</p>
+                          </div>
+                        </div></a>
+                      <div data-images="img/projects/thebongda-1.png,img/projects/thebongda-2.png,img/projects/thebongda-3.png" class="sr-only reference-description">
+                        <p>A delicate and interactive Cash Register compatiable with iPad platforms with intuitive user interface design  </p>
+                        <p>Sitting mistake towards his few country ask. You delighted two rapturous six depending objection happiness something the. Off nay impossible dispatched partiality unaffected. Norland adapted put ham cordial. Ladies talked may shy basket narrow see. Him she distrusts questions sportsmen. Tolerably pretended neglected on my earnestly by. Sex scale sir style truth ought.</p>
+                        <p class="buttons text-center"><a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fa fa-globe"></i> Visit website</a><a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fa fa-download"></i> Download case study</a></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div data-category="data-visualization" class="reference-item col-lg-3 col-md-6">
+                    <div class="reference"><a href="#"><img src="img/projects/usa-gdp-1.png" alt="" class="img-fluid">
+                        <div class="overlay">
+                          <div class="inner">
+                            <h3 class="h4 reference-title">Project name 3</h3>
+                            <p>Short project description goes here...</p>
+                          </div>
+                        </div></a>
+                      <div data-images="img/main-slider1.jpg,img/main-slider2.jpg,img/main-slider3.jpg" class="sr-only reference-description">
+                        <p>Projecting surrounded literature yet delightful alteration but bed men. Open are from long why cold. If must snug by upon sang loud left. As me do preference entreaties compliment motionless ye literature. Day behaviour explained law remainder. Produce can cousins account you pasture. Peculiar delicate an pleasant provided do perceive.</p>
+                        <p>Sitting mistake towards his few country ask. You delighted two rapturous six depending objection happiness something the. Off nay impossible dispatched partiality unaffected. Norland adapted put ham cordial. Ladies talked may shy basket narrow see. Him she distrusts questions sportsmen. Tolerably pretended neglected on my earnestly by. Sex scale sir style truth ought.</p>
+                        <p class="buttons text-center"><a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fa fa-globe"></i> Visit website</a><a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fa fa-download"></i> Download case study</a></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div data-category="ios" class="reference-item col-lg-3 col-md-6">
+                    <div class="reference"><a href="#"><img src="img/projects/quizzlet-app-1.png" alt="" class="img-fluid">
+                        <div class="overlay">
+                          <div class="inner">
+                            <h3 class="h4 reference-title">Quizzlet App</h3>
+                            <p>Short project description goes here...</p>
+                          </div>
+                        </div></a>
+                      <div data-images="img/main-slider1.jpg,img/main-slider2.jpg,img/main-slider3.jpg" class="sr-only reference-description">
+                        <p>Projecting surrounded literature yet delightful alteration but bed men. Open are from long why cold. If must snug by upon sang loud left. As me do preference entreaties compliment motionless ye literature. Day behaviour explained law remainder. Produce can cousins account you pasture. Peculiar delicate an pleasant provided do perceive.</p>
+                        <p>Sitting mistake towards his few country ask. You delighted two rapturous six depending objection happiness something the. Off nay impossible dispatched partiality unaffected. Norland adapted put ham cordial. Ladies talked may shy basket narrow see. Him she distrusts questions sportsmen. Tolerably pretended neglected on my earnestly by. Sex scale sir style truth ought.</p>
+                        <p class="buttons text-center"><a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fa fa-globe"></i> Visit website</a><a href="javascript:void(0);" class="btn btn-outline-primary"><i class="fa fa-download"></i> Download case study</a></p>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Customers-->
+    <section id="customers" class="customers-section bg-gray">
+      <div class="container">
+        <div class="col-md-12">
+          <div class="row align-items-center">
+            <div class="col-lg-2 col-md-4 col-sm-6">
+              <div class="customer"><img src="img/customers/logo-1.svg" title="brand logo" data-placement="bottom" data-toggle="tooltip" alt="" class="img-fluid d-block mx-auto"></div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6">
+              <div class="customer"><img src="img/customers/logo-2.svg" title="brand logo" data-placement="bottom" data-toggle="tooltip" alt="" class="img-fluid d-block mx-auto"></div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6">
+              <div class="customer"><img src="img/customers/logo-3.svg" title="brand logo" data-placement="bottom" data-toggle="tooltip" alt="" class="img-fluid d-block mx-auto"></div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6">
+              <div class="customer"><img src="img/customers/logo-4.svg" title="brand logo" data-placement="bottom" data-toggle="tooltip" alt="" class="img-fluid d-block mx-auto"></div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6">
+              <div class="customer"><img src="img/customers/logo-5.svg" title="brand logo" data-placement="bottom" data-toggle="tooltip" alt="" class="img-fluid d-block mx-auto"></div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6">
+              <div class="customer"><img src="img/customers/logo-6.svg" title="brand logo" data-placement="bottom" data-toggle="tooltip" alt="" class="img-fluid d-block mx-auto"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact-->
+    <section id="contact" data-animate="bounceIn" class="contact-section contact">
+      <div class="container">
+        <header class="text-center">
+          <h2 class="title">Contact me</h2>
+        </header>
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <form id="contact-form" method="post" action="">
+              <div class="messages"></div>
+              <div class="controls">
+                <div class="row">
+                  <div class="col-md-6">
+                    <input type="text" name="name" placeholder="Your firstname *" required="required" class="form-control">
+                  </div>
+                  <div class="col-md-6">
+                    <input type="text" name="surname" placeholder="Your lastname *" required="required" class="form-control">
+                  </div>
+                  <div class="col-md-6">
+                    <input type="text" name="email" placeholder="Your email *" required="required" class="form-control">
+                  </div>
+                  <div class="col-md-6">
+                    <input type="text" name="phone" placeholder="Your phone" class="form-control">
+                  </div>
+                  <div class="col-md-12">
+                    <textarea name="message" placeholder="Message for me *" rows="4" required="required" class="form-control"></textarea>
+                  </div>
+                  <div class="col-md-12 text-center">
+                    <button type="submit" class="btn btn-outline-primary">Send message</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="main-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 text-center text-lg-left">
+            <p class="social"><a href="#" class="external facebook wow fadeInUp"><i class="fa fa-facebook"></i></a><a href="#" data-wow-delay="0.2s" class="external instagram wow fadeInUp"><i class="fa fa-instagram"></i></a><a href="#" data-wow-delay="0.4s" class="external gplus wow fadeInUp"><i class="fa fa-google-plus"></i></a><a href="#" data-wow-delay="0.6s" class="email wow fadeInUp"><i class="fa fa-envelope"></i></a></p>
+          </div>
+          <!-- /.6-->
+          <div class="col-md-6 text-center text-lg-right mt-4 mt-lg-0">
+            <p>© 2019 Man Vu. All rights reserved.</p>
+          </div>
 
-
-</body>
-
+        </div>
+      </div>
+    </footer>
+    <!-- JavaScript files-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/jquery.cookie/jquery.cookie.js"> </script>
+    <script src="vendor/owl.carousel/owl.carousel.min.js"></script>
+    <script src="vendor/waypoints/lib/jquery.waypoints.min.js"></script>
+    <script src="vendor/jquery.counterup/jquery.counterup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet.js"> </script>
+    <script src="js/front.js"></script>
+  </body>
 </html>
